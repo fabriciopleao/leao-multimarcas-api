@@ -1,7 +1,5 @@
 package com.leaomulti.leaocentermultimarcas.model;
 
-import java.math.BigDecimal;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,8 +14,12 @@ public class Veiculo {
 
 	private String marca;
 	private String nome;
-	private String anoFabricacao;
-	private BigDecimal valor;
+	private String cor;
+	private int anoModelo;
+	private int anoFabricacao;
+	private String combustivel;
+	private String finalPlaca;
+	private int valor;
 	
 	
 	public Long getId() {
@@ -26,6 +28,31 @@ public class Veiculo {
 	public void setId(Long id) {
 		this.id = id;
 	}
+	public String getCor() {
+		return cor;
+	}
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+	public int getAnoModelo() {
+		return anoModelo;
+	}
+	public void setAnoModelo(int anoModelo) {
+		this.anoModelo = anoModelo;
+	}
+	public String getCombustivel() {
+		return combustivel;
+	}
+	public void setCombustivel(String combustivel) {
+		this.combustivel = combustivel;
+	}
+	public String getFinalPlaca() {
+		return finalPlaca;
+	}
+	public void setFinalPlaca(String finalPlaca) {
+		this.finalPlaca = finalPlaca;
+	}
+	
 	public String getMarca() {
 		return marca;
 	}
@@ -38,16 +65,16 @@ public class Veiculo {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getAnoFabricacao() {
+	public int getAnoFabricacao() {
 		return anoFabricacao;
 	}
-	public void setAnoFabricacao(String anoFabricacao) {
+	public void setAnoFabricacao(int anoFabricacao) {
 		this.anoFabricacao = anoFabricacao;
 	}
-	public BigDecimal getValor() {
+	public int getValor() {
 		return valor;
 	}
-	public void setValor(BigDecimal valor) {
+	public void setValor(int valor) {
 		this.valor = valor;
 	}
 
