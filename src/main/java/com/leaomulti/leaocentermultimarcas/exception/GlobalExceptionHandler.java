@@ -16,17 +16,10 @@ public class GlobalExceptionHandler {
 
 	
 	@ExceptionHandler(BlankFieldException.class)
-	public ResponseEntity<Object> handleBlankFieldException(BlankFieldException ex, WebRequest request) {
-	    ErrorMessage errorMessage = new ErrorMessage(HttpStatus.BAD_REQUEST, ex.getMessage(), request.getDescription(false));
-	    System.out.println("Handling BlankFieldException: " + ex.getMessage());
-	    return new ResponseEntity<>(errorMessage, HttpStatus.BAD_REQUEST);
-	}
-
-	/*@ExceptionHandler(BlankFieldException.class)
 		public ResponseEntity<Object> handleBlankFieldException(BlankFieldException ex, WebRequest request) {
 			ErrorMessage errorMessage = new ErrorMessage(HttpStatus.BAD_REQUEST, ex.getMessage(), request.getDescription(false));
 			return new ResponseEntity<>(errorMessage, HttpStatus.BAD_REQUEST);
-	}*/
+	}
 	
 	@ExceptionHandler(InvalidBrandModelException.class)
 		public ResponseEntity<Object> handleInvalidBrandModelException(InvalidBrandModelException ex, WebRequest request) {
