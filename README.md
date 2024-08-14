@@ -34,4 +34,4 @@ Desenvolvimento de um projeto pessoal, com documentações e todas as camadas de
 ## Documentação
   - Swagger: http://localhost:8087/swagger-ui/index.html#/
     
-### PROJETO RECEBERÁ ATUALIZAÇÕES FREQUENTES, EXISTEM DIVERSOS BUGS QUE SERÃO CORRIGIDOS!!!
+### PROJETO W.I.P
